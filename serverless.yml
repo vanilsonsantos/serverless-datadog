@@ -1,0 +1,17 @@
+service: helloworldapp
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+plugins:
+  - serverless-offline
+  - serverless-plugin-datadog
+
+custom:
+  datadog:
+    site: us5.datadoghq.com
+    apiKey: XXXXXXXXXXXXXXXXX811d
+    enabled: true

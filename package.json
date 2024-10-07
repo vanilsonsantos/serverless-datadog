@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "start": "serverless offline --debug"
+  },
+  "dependencies": {
+    "serverless": "^4.4.4",
+    "serverless-offline": "^14.3.2",
+    "serverless-plugin-datadog": "^5.71.0"
+  },
+  "engines" : { 
+    "npm" : ">=10.8.2",
+    "node" : ">=20.17.0"
+  }
+}
